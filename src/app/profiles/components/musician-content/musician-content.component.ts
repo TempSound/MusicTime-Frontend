@@ -17,11 +17,12 @@ import {
   MatCardTitle
 } from "@angular/material/card";
 import {AsyncPipe, NgForOf} from "@angular/common";
+import {RouterLink} from "@angular/router";
 
 @Component({
   selector: 'musician-content',
   standalone: true,
-  imports: [MatTableModule, MatFormFieldModule, MatInputModule, MatButton, MatCard, MatCardActions, MatCardContent, MatCardHeader, MatCardSubtitle, MatCardTitle, NgForOf, AsyncPipe],
+  imports: [MatTableModule, MatFormFieldModule, MatInputModule, MatButton, MatCard, MatCardActions, MatCardContent, MatCardHeader, MatCardSubtitle, MatCardTitle, NgForOf, AsyncPipe, RouterLink],
   templateUrl: './musician-content.component.html',
   styleUrl: './musician-content.component.css'
 })

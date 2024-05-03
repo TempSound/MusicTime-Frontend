@@ -10,6 +10,8 @@ import {
   MatCardSubtitle
 } from "@angular/material/card";
 import {MatButton} from "@angular/material/button";
+import {ProfileMusicianComponent} from "../../components/profile-musician/profile-musician.component";
+
 
 @Component({
   selector: 'app-musician-view',
@@ -23,7 +25,9 @@ import {MatButton} from "@angular/material/button";
     MatCardImage,
     MatCardActions,
     MatButton,
-    MatCardSubtitle
+    MatCardSubtitle,
+    MusicianContentComponent,
+    ProfileMusicianComponent
   ],
   templateUrl: './musician-view.component.html',
   styleUrl: './musician-view.component.css'

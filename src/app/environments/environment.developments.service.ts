@@ -1,9 +1,4 @@
-import { Injectable } from '@angular/core';
-
-@Injectable({
-  providedIn: 'root'
-})
-export class EnvironmentDevelopmentsService {
-
-  constructor() { }
-}
+export const environment = {
+  production: false,
+  serverBasePath: 'http://localhost:3000/api/v1'
+};

@@ -13,5 +13,7 @@ export const routes: Routes = [
 
   { path: 'musicians/:id', component: ProfileMusicianComponent },
 
+  { path: 'musicians/:id', component: ProfileMusicianComponent },
+
   { path: '', redirectTo: '/home', pathMatch: 'full' }, // redirige a 'home' cuando la ruta es vacía
 ];

@@ -2,8 +2,8 @@ mat-card {
   margin: 20px;
 }
 img {
-  width: 500px;  /* Ancho de la imagen */
-  height: 300px; /* Altura de la imagen */
+  max-width: 30%;
+  height: auto; /* Altura de la imagen */
   object-fit: cover; /* Asegura que las imágenes se redimensionen correctamente */
   display: block;
   margin-left: auto;

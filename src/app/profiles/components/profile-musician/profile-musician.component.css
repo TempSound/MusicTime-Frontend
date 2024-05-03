@@ -2,12 +2,23 @@ mat-card {
   margin: 20px;
 }
 img {
-  width: 500px;  /* Ancho de la imagen */
-  height: 300px; /* Altura de la imagen */
+  max-width: 60%;
+  height: auto;
   object-fit: cover; /* Asegura que las imágenes se redimensionen correctamente */
   display: block;
   margin-left: auto;
   margin-right: auto;
   border: 5px solid black; /* Agrega un marco de 5px de ancho y de color negro */
   border-radius: 10px;
+}
+.white-background {
+  background-color: white;
+}
+.center-title {
+  font-size: 10em;
+  display: flex;
+  justify-content: center;
+}
+.black-button {
+  color: black; /* Reemplaza #some-color con el color de fondo que desees */
 }

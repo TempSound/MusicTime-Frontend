@@ -1,27 +1,29 @@
-# TFOpenSource
+# Descripción del Proyecto TFOpenSource
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.6.
+Este proyecto fue generado con [Angular CLI](https://github.com/angular/angular-cli) versión 17.3.6.
 
-## Development server
+## Lenguajes y Herramientas
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Lenguajes**: TypeScript, JavaScript
+- **Gestor de Paquetes**: npm
+- **Framework**: Angular
 
-## Code scaffolding
+## Dependencias
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Las dependencias del proyecto se pueden encontrar en el archivo `package.json`. Algunas de las dependencias principales incluyen:
 
-## Build
+- Angular
+- Angular CLI
+- Karma (para pruebas unitarias)
+- Angular Material
+- Otras dependencias específicas del proyecto
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Funcionalidades
 
-## Running unit tests
+Las funcionalidades actuales del proyecto incluyen:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Servidor de desarrollo: Ejecuta `ng serve` para un servidor de desarrollo. Navega a `http://localhost:4200/`. La aplicación se recargará automáticamente si cambias alguno de los archivos fuente.
+- Generación de código: Ejecuta `ng generate component component-name` para generar un nuevo componente. También puedes usar `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Construcción del proyecto: Ejecuta `ng build` para construir el proyecto. Los artefactos de construcción se almacenarán en el directorio `dist/`.
+- Pruebas unitarias: Ejecuta `ng test` para ejecutar las pruebas unitarias a través de [Karma](https://karma-runner.github.io).
+- Pruebas de extremo a extremo: Ejecuta `ng e2e` para ejecutar las pruebas de extremo a extremo a través de una plataforma de tu elección. Para usar este comando, primero necesitas agregar un paquete que implemente capacidades de prueba de extremo a extremo.

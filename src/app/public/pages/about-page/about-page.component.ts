@@ -1,9 +1,12 @@
 import { Component } from '@angular/core';
+import {MusicianContentComponent} from "../../../profiles/components/musician-content/musician-content.component";
 
 @Component({
   selector: 'about-page',
   standalone: true,
-  imports: [],
+    imports: [
+        MusicianContentComponent
+    ],
   templateUrl: './about-page.component.html',
   styleUrl: './about-page.component.css'
 })

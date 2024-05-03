@@ -9,6 +9,7 @@ import { environment } from '../../../environments/environment';
 })
 export class MusicianService {
   baseUrl: string = environment.baseUrl;
+  private apiUrl = 'http://localhost:3000/musician';
   constructor(private http: HttpClient) { }
   getAll() {
     return this.http.get<Musician[]>(this.baseUrl);
@@ -24,5 +25,9 @@ export class MusicianService {
   }
   deleteMusician(id: number) {
     return this.http.delete(`${this.baseUrl}/${id}`);
+  }
+  getMusician(id: string): Observable<Musician> {
+    const url = `${this.apiUrl}/${id}`;
+    return this.http.get<Musician>(url);
   }
 }

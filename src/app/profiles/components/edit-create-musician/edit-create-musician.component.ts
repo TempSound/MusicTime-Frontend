@@ -47,10 +47,11 @@ export class EditCreateMusicianComponent implements OnInit {
   }
   addMusician() {
     let musician: Musician = {
-      name: this.myform.get('name')?.value,
-      manager: this.myform.get('manager')?.value,
-      description: this.myform.get('description')?.value,
-    }
+      name: 'some name',
+      imageUrl: 'some image url',
+      manager: 'some manager',
+      description: 'some description'
+    };
     if (this.id) {
       console.log(musician)
       this.musicianServie.updateMusician(this.id, musician).subscribe(

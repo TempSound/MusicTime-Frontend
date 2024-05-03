@@ -1,0 +1,7 @@
+.logo {
+  height: 50px; /* Ajusta esto según el tamaño que desees para tu logo */
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}

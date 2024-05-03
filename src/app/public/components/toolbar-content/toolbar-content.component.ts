@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import {MatIcon} from "@angular/material/icon";
 import {MatToolbar} from "@angular/material/toolbar";
-import {MatIconButton} from "@angular/material/button";
+import {MatButton, MatIconButton} from "@angular/material/button";
+import {RouterLink} from "@angular/router";
 
 @Component({
   selector: 'toolbar-content',
@@ -9,7 +10,9 @@ import {MatIconButton} from "@angular/material/button";
   imports: [
     MatIcon,
     MatToolbar,
-    MatIconButton
+    MatIconButton,
+    RouterLink,
+    MatButton
   ],
   templateUrl: './toolbar-content.component.html',
   styleUrl: './toolbar-content.component.css'

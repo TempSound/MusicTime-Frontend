@@ -1,4 +1,4 @@
-import { MusicianService } from './../../service/musician-api.service';
+import { MusicianService } from '../../service/musician-api.service';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -30,6 +30,7 @@ export class EditCreateMusicianComponent implements OnInit {
       name: ['', Validators.required],
       manager: ['', Validators.required],
       description: ['', Validators.required],
+      imageUrl: ['', Validators.required],
     })
   }
   loadData() {
@@ -41,16 +42,17 @@ export class EditCreateMusicianComponent implements OnInit {
           this.myform.get('name')?.setValue(data.name);
           this.myform.get('description')?.setValue(data.description);
           this.myform.get('manager')?.setValue(data.manager);
+          this.myform.get('imageUrl')?.setValue(data.imageUrl);
         }
       )
     }
   }
   addMusician() {
     let musician: Musician = {
-      name: 'some name',
-      imageUrl: 'some image url',
-      manager: 'some manager',
-      description: 'some description'
+      name: this.myform.get('name')?.value,
+      imageUrl: this.myform.get('imageUrl')?.value,
+      manager: this.myform.get('manager')?.value,
+      description: this.myform.get('description')?.value
     };
     if (this.id) {
       console.log(musician)

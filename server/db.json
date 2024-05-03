@@ -23,6 +23,27 @@
       "description": "Eduardo José Herrera de los Ríos, más conocido como Eddy Herrera, es un cantante dominicano de merengue. Perteneció como uno de los grandes vocalistas del conjunto musical liderado por Wilfrido Vargas en la década de 1980. ",
       "available": false,
       "imageUrl": "https://res.cloudinary.com/djia8bsvr/image/upload/v1714744341/eddy_herrera_h309en.jpg"
+    },
+    {
+      "name": "some name",
+      "imageUrl": "some image url",
+      "manager": "some manager",
+      "description": "some description",
+      "id": 4
+    },
+    {
+      "name": "some name",
+      "imageUrl": "some image url",
+      "manager": "some manager",
+      "description": "some description",
+      "id": 5
+    },
+    {
+      "name": "adssad",
+      "imageUrl": "asdsad",
+      "manager": "adssad",
+      "description": "asdsad",
+      "id": 6
     }
   ]
 }

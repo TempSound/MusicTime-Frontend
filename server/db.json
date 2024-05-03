@@ -1,21 +1,20 @@
 {
   "musician": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Grupo 5",
       "manager": "David Orozco",
       "description": "Grupo 5 es una banda peruana de cumbia y merengue fundada el 31 de enero de 1973 en la ciudad de Monsefú. Sus líderes, actualmente, son los hermanos: Elmer, Andy y Christian, hijos de Elmer Yaipén Uypan, fundador junto a su hermano Víctor.",
       "available": true
     },
     {
-      "id": 2,
-      "name": "Agua Marina",
+      "name": "Agua Marina 2",
       "manager": "Manuel Quiroga Querevalú",
       "description": "Agua Marina es una banda peruana de cumbia fundada el 30 de agosto de 1976 en la ciudad de Sechura, en el departamento de Piura.​Es considerada como la trilogía de la cumbia, junto con Armonía 10 y el Grupo 5, ​ pieza importante en el afianzamiento de la cumbia peruana como género musical.",
-      "available": false
+      "id": "2"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Eddy Herrera",
       "manager": "Eddy Herrera",
       "description": "Eduardo José Herrera de los Ríos, más conocido como Eddy Herrera, es un cantante dominicano de merengue. Perteneció como uno de los grandes vocalistas del conjunto musical liderado por Wilfrido Vargas en la década de 1980. ",

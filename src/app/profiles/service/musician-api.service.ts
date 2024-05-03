@@ -9,7 +9,7 @@ import { environment } from '../../../environments/environment';
 })
 export class MusicianService {
   baseUrl: string = environment.baseUrl;
-  private apiUrl = 'http://localhost:3000/musician';
+  private apiUrl = 'https://my-json-server.typicode.com/VictorHerrera10/VictorHerrera10-db/musician';
   constructor(private http: HttpClient) { }
   getAll() {
     return this.http.get<Musician[]>(this.baseUrl);

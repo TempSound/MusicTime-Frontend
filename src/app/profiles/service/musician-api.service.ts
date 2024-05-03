@@ -2,19 +2,27 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Musician } from '../model/musician.model';
+import { environment } from '../../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class MusicianService {
-  private apiUrl = 'http://localhost:3000/musician'; // Ajusta esto a tu API
-
+  baseUrl: string = environment.baseUrl;
   constructor(private http: HttpClient) { }
-
-  getMusician(id: string): Observable<Musician> {
-    const url = `${this.apiUrl}/${id}`;
-    return this.http.get<Musician>(url);
+  getAll() {
+    return this.http.get<Musician[]>(this.baseUrl);
   }
-
-  // Otros métodos...
+  getOne(id:number) {
+    return this.http.get<Musician>(`${this.baseUrl}/${id}`);
+  }
+  createMusician(body: Musician) {
+    return this.http.post<Musician>(this.baseUrl, body);
+  }
+  updateMusician(id: number, body: Musician) {
+    return this.http.put<Musician>(`${this.baseUrl}/${id}`, body);
+  }
+  deleteMusician(id: number) {
+    return this.http.delete(`${this.baseUrl}/${id}`);
+  }
 }

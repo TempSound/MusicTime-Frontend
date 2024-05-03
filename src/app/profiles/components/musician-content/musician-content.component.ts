@@ -7,7 +7,7 @@ import {Musician} from "../../model/musician.model";
 import {MusicianService} from "../../service/musician-api.service";
 
 @Component({
-  selector: 'app-musician-content',
+  selector: 'musician-content',
   standalone: true,
   imports: [MatTableModule, MatFormFieldModule, MatInputModule],
   templateUrl: './musician-content.component.html',

@@ -30,6 +30,6 @@ export class MusicianCardComponent {
   musicians$: Observable<any>;
 
   constructor(private http: HttpClient) {
-    this.musicians$ = this.http.get('https://my-json-server.typicode.com/VictorHerrera10/VictorHerrera10-db/musician');
+    this.musicians$ = this.http.get('https://musicianapp.azurewebsites.net/musician');
   }
 }

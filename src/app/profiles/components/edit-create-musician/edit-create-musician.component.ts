@@ -55,6 +55,7 @@ export class EditCreateMusicianComponent implements OnInit {
       description: this.myform.get('description')?.value
     };
     if (this.id) {
+      console.log("agregando")
       console.log(musician)
       this.musicianServie.updateMusician(this.id, musician).subscribe(
         (data) => {
@@ -66,6 +67,8 @@ export class EditCreateMusicianComponent implements OnInit {
         }
       )
     } else {
+      console.log("agregando")
+      console.log(musician)
       this.musicianServie.createMusician(musician).subscribe(
         (data) => {
           this.router.navigate(['/musician'])

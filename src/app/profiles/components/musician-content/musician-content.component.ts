@@ -1,4 +1,4 @@
-import { MusicianService } from './../../service/musician-api.service';
+import { MusicianService } from '../../service/musician-api.service';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatTableModule } from '@angular/material/table';
 import { MatTableDataSource } from '@angular/material/table';
@@ -33,7 +33,6 @@ export class MusicianContentComponent implements OnInit {
   getMusicians() {
     this.musicianService.getAll().subscribe(
       (data: Musician[]) => {
-        console.log(data)
         this.dataSource = new MatTableDataSource(data);
         this.dataSource.paginator = this.paginator;
         this.dataSource.sort = this.sort;

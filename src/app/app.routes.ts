@@ -11,10 +11,10 @@ export const routes: Routes = [
   { path: 'about', component: AboutPageComponent },
   { path: 'musician', component: MusicianViewComponent },
   { path: 'create-musician', component: EditCreateMusicianComponent },
-  { path: 'edit-musician/:id', component: EditCreateMusicianComponent },
+  { path: 'edit-musician/:_id', component: EditCreateMusicianComponent },
   { path: 'subscription', component: SubscriptionComponent },
 
-  { path: 'musicians/:id', component: ProfileMusicianComponent },
+  { path: 'musicians/:_id', component: ProfileMusicianComponent },
 
 
   { path: '', redirectTo: '/home', pathMatch: 'full' }, // redirige a 'home' cuando la ruta es vacía

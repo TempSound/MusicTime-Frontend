@@ -19,7 +19,7 @@ import {MatFabButton} from "@angular/material/button";
   styleUrl: './musician-content.component.css'
 })
 export class MusicianContentComponent implements OnInit {
-  displayedColumns: string[] = ['id', 'name', 'manager', 'description', 'action'];
+  displayedColumns: string[] = ['_id', 'name', 'manager', 'description', 'action'];
   dataSource: MatTableDataSource<Musician> = new MatTableDataSource();
 
   @ViewChild(MatPaginator, { static: false }) paginator!: MatPaginator;
@@ -42,8 +42,8 @@ export class MusicianContentComponent implements OnInit {
       }
     )
   }
-  deleteMusician(id: number) {
-    this.musicianService.deleteMusician(id).subscribe(
+  deleteMusician(_id: number) {
+    this.musicianService.deleteMusician(_id).subscribe(
       (data) => {
         this.getMusicians()
       },

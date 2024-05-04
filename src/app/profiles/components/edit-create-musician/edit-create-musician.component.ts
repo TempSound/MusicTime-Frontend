@@ -16,7 +16,7 @@ import { MatButtonModule } from '@angular/material/button';
 export class EditCreateMusicianComponent implements OnInit {
   myform!: FormGroup;
   title: string = 'Agregar músico'
-  id!: number;
+  _id!: number;
   constructor(private musicianServie: MusicianService, private formBuilder: FormBuilder,
     private routed: ActivatedRoute, private router: Router) {
 
@@ -34,10 +34,10 @@ export class EditCreateMusicianComponent implements OnInit {
     })
   }
   loadData() {
-    this.id = this.routed.snapshot.params['id'];
-    if (this.id) {
+    this._id = this.routed.snapshot.params['_id'];
+    if (this._id) {
       this.title = 'Editar músico'
-      this.musicianServie.getOne(this.id).subscribe(
+      this.musicianServie.getOne(this._id).subscribe(
         (data: Musician) => {
           this.myform.get('name')?.setValue(data.name);
           this.myform.get('description')?.setValue(data.description);
@@ -54,10 +54,10 @@ export class EditCreateMusicianComponent implements OnInit {
       manager: this.myform.get('manager')?.value,
       description: this.myform.get('description')?.value
     };
-    if (this.id) {
+    if (this._id) {
       console.log("agregando")
       console.log(musician)
-      this.musicianServie.updateMusician(this.id, musician).subscribe(
+      this.musicianServie.updateMusician(this._id, musician).subscribe(
         (data) => {
           this.router.navigate(['/musician'])
         },

@@ -41,9 +41,9 @@ export class ProfileMusicianComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    const id = this.route.snapshot.paramMap.get('id');
-    if (id) {
-      this.musician$ = this.musicianService.getMusician(id);
+    const _id = this.route.snapshot.paramMap.get('_id');
+    if (_id) {
+      this.musician$ = this.musicianService.getMusician(_id);
     }
   }
 }

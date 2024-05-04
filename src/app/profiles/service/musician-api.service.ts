@@ -14,20 +14,20 @@ export class MusicianService {
   getAll() {
     return this.http.get<Musician[]>(this.baseUrl);
   }
-  getOne(id:number) {
-    return this.http.get<Musician>(`${this.baseUrl}/${id}`);
+  getOne(_id:number) {
+    return this.http.get<Musician>(`${this.baseUrl}/${_id}`);
   }
   createMusician(body: Musician) {
     return this.http.post<Musician>(this.apiUrl, body);
   }
-  updateMusician(id: number, body: Musician) {
-    return this.http.put<Musician>(`${this.baseUrl}/${id}`, body);
+  updateMusician(_id: number, body: Musician) {
+    return this.http.put<Musician>(`${this.baseUrl}/${_id}`, body);
   }
-  deleteMusician(id: number) {
-    return this.http.delete(`${this.baseUrl}/${id}`);
+  deleteMusician(_id: number) {
+    return this.http.delete(`${this.baseUrl}/${_id}`);
   }
-  getMusician(id: string): Observable<Musician> {
-    const url = `${this.apiUrl}/${id}`;
+  getMusician(_id: string): Observable<Musician> {
+    const url = `${this.apiUrl}/${_id}`;
     return this.http.get<Musician>(url);
   }
 }

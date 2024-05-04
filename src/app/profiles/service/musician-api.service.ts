@@ -9,7 +9,7 @@ import { environment } from '../../../environments/environment';
 })
 export class MusicianService {
   baseUrl: string = environment.baseUrl;
-  private apiUrl = 'https://my-json-server.typicode.com/VictorHerrera10/VictorHerrera10-db/musician';
+  private apiUrl = 'https://musicianapp.azurewebsites.net/musician';
   constructor(private http: HttpClient) { }
   getAll() {
     return this.http.get<Musician[]>(this.baseUrl);
@@ -18,7 +18,7 @@ export class MusicianService {
     return this.http.get<Musician>(`${this.baseUrl}/${id}`);
   }
   createMusician(body: Musician) {
-    return this.http.post<Musician>(this.baseUrl, body);
+    return this.http.post<Musician>(this.apiUrl, body);
   }
   updateMusician(id: number, body: Musician) {
     return this.http.put<Musician>(`${this.baseUrl}/${id}`, body);

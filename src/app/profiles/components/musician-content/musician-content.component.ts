@@ -34,7 +34,6 @@ export class MusicianContentComponent implements OnInit {
   getMusicians() {
     this.musicianService.getAll().subscribe(
       (data: Musician[]) => {
-        console.log(data)
         this.dataSource = new MatTableDataSource(data);
         this.dataSource.paginator = this.paginator;
         this.dataSource.sort = this.sort;

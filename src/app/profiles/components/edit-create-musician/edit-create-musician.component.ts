@@ -44,6 +44,7 @@ export class EditCreateMusicianComponent implements OnInit {
           this.myform.get('description')?.setValue(data.description);
           this.myform.get('manager')?.setValue(data.manager);
           this.myform.get('imageUrl')?.setValue(data.imageUrl);
+          this.myform.get('socialNetwork')?.setValue(data.socialNetwork);
         }
       )
     }

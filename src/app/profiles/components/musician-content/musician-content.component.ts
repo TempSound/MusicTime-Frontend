@@ -18,7 +18,7 @@ import { RouterLink } from '@angular/router';
   styleUrl: './musician-content.component.css'
 })
 export class MusicianContentComponent implements OnInit {
-  displayedColumns: string[] = ['id', 'name', 'manager', 'description', 'action'];
+  displayedColumns: string[] = ['id', 'name', 'manager', 'socialNetwork', 'description', 'action'];
   dataSource: MatTableDataSource<Musician> = new MatTableDataSource();
 
   @ViewChild(MatPaginator, { static: false }) paginator!: MatPaginator;

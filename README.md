@@ -12,11 +12,11 @@ Este proyecto fue generado con [Angular CLI](https://github.com/angular/angular-
 
 Las dependencias del proyecto se pueden encontrar en el archivo `package.json`. Algunas de las dependencias principales incluyen:
 
-- Angular
-- Angular CLI
-- Karma (para pruebas unitarias)
-- Angular Material
-- Otras dependencias específicas del proyecto
+- Angular.
+- Angular CLI.
+- Karma (para pruebas unitarias).
+- Angular Material.
+- Otras dependencias específicas del proyecto.
 
 ## Funcionalidades
 

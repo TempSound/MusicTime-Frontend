@@ -31,6 +31,7 @@ export class EditCreateMusicianComponent implements OnInit {
       manager: ['', Validators.required],
       description: ['', Validators.required],
       imageUrl: ['', Validators.required],
+      socialNetwork: ['', Validators.required]
     })
   }
   loadData() {
@@ -49,10 +50,11 @@ export class EditCreateMusicianComponent implements OnInit {
   }
   addMusician() {
     let musician: Musician = {
-      name: this.myform.get('name')?.value,
+      description: this.myform.get('description')?.value,
       imageUrl: this.myform.get('imageUrl')?.value,
       manager: this.myform.get('manager')?.value,
-      description: this.myform.get('description')?.value
+      name: this.myform.get('name')?.value,
+      socialNetwork: this.myform.get('socialNetwork')?.value
     };
     if (this.id) {
       console.log("agregando")

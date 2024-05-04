@@ -1,4 +1,4 @@
-import { MusicianService } from './../../service/musician-api.service';
+import { MusicianService } from '../../service/musician-api.service';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatTableModule } from '@angular/material/table';
 import { MatTableDataSource } from '@angular/material/table';
@@ -9,11 +9,12 @@ import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatIconModule } from '@angular/material/icon';
 import { RouterLink } from '@angular/router';
+import {MatFabButton} from "@angular/material/button";
 
 @Component({
   selector: 'musician-content',
   standalone: true,
-  imports: [MatTableModule, MatFormFieldModule, MatInputModule, MatPaginatorModule, MatIconModule, RouterLink],
+  imports: [MatTableModule, MatFormFieldModule, MatInputModule, MatPaginatorModule, MatIconModule, RouterLink, MatSort, MatFabButton],
   templateUrl: './musician-content.component.html',
   styleUrl: './musician-content.component.css'
 })

@@ -30,6 +30,6 @@ export class MusicianCardComponent {
   musicians$: Observable<any>;
 
   constructor(private http: HttpClient) {
-    this.musicians$ = this.http.get('https://musicianapp.azurewebsites.net/musician');
+    this.musicians$ = this.http.get('http://localhost:3000/musician');
   }
 }

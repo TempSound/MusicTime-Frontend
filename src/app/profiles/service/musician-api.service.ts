@@ -9,7 +9,7 @@ import { environment } from '../../../environments/environment';
 })
 export class MusicianService {
   baseUrl: string = environment.baseUrl;
-  private apiUrl = 'https://musicianapp.azurewebsites.net/musician';
+  private apiUrl = 'http://localhost:3000/musician';
   constructor(private http: HttpClient) { }
   getAll() {
     return this.http.get<Musician[]>(this.baseUrl);

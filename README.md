@@ -6,7 +6,7 @@ Este proyecto fue generado con [Angular CLI](https://github.com/angular/angular-
 
 - **Lenguajes**: TypeScript, JavaScript
 - **Gestor de Paquetes**: npm
-- **Framework**: Angular
+- **Framework**: Angular.
 
 ## Dependencias
 

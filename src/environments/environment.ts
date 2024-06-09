@@ -1,5 +1,5 @@
 export const environment = {
   production: false,
-  baseUrl: 'http://localhost:3000/musician',
-  serverBasePath: 'http://localhost:3000/musician',
+  baseUrl: 'http://localhost:8080',
+  serverBasePath: 'http://localhost:8080',
 };

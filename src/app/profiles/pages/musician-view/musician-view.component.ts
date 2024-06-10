@@ -32,7 +32,7 @@ import {ProfileMusicianComponent} from "../../components/profile-musician/profil
   templateUrl: './musician-view.component.html',
   styleUrl: './musician-view.component.css'
 })
-export class MusicianViewComponent {
+export class MusicianViewComponent {//TODO: Add the musician view component
 
 
 }

@@ -1,0 +1,54 @@
+<nav class="navbar navbar-expand-lg navbar-light my-navbar">
+    <div class="container-fluid">
+        <a class="navbar-brand ms-3" href="#">
+            <img ngSrc="../../../../assets/Logo%20Music-Time.png" alt="logo" class="logo" height="1554" width="4560">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active custom-link" routerLink="/home">Home</a>
+                </li>
+                <li class="nav-item"
+                    *ngIf="!user || user && (user.userType=='0'||user.userType=='1')">
+                    <a class="nav-link active custom-link"
+                        routerLink="/suscription">Subscription</a>
+                </li>
+                <li class="nav-item" *ngIf="user && user.userType!='0'">
+                    <a class="nav-link custom-link"
+                        routerLink="contract-view">Contract</a>
+                </li>
+                <li class="nav-item" *ngIf="!user">
+                    <button
+                        class="ms-3 login-button"
+                        routerLink="login"
+                        mat-raised-button
+                        color="primary">Login</button>
+                </li>
+                <li class="nav-item" *ngIf="!user">
+                    <button
+                        routerLink="register"
+                        class="ms-2 signup-button" mat-raised-button
+                        color="primary">Sign
+                        up</button>
+                </li>
+                <li class="nav-item" *ngIf="user">
+                    <button
+                        (click)="getProfile()"
+                        class="ms-2 profile-button" mat-raised-button
+                        color="primary">Profile</button>
+                </li>
+                <li class="nav-item" *ngIf="user">
+                    <button (click)="logOut()"
+                        class="ms-2 logout-button" mat-raised-button
+                        color="primary">Log out</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,13 @@
+.save-buton {
+  width: 300px;
+  height: 40px;
+  background-color: #00236c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.save-buton:disabled {
+  background-color: grey;
+}

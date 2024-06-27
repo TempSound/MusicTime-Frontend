@@ -1,0 +1,58 @@
+.content {
+    display: grid;
+    grid-template-columns: 15% 85%;
+}
+
+.img-item {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.filter {
+    padding: 10px;
+}
+
+.filter ul {
+    list-style: none;
+}
+
+.filter li {
+    display: flex;
+    align-items: center;
+    padding: 5px 3px;
+    cursor: pointer;
+}
+
+.filter li:hover {
+    background-color: #F7F7F7;
+}
+
+.logo-music {
+    width: 100%;
+    height: 30%;
+    object-fit: cover;
+}
+
+
+.hire-button {
+  background-color: #002060 !important;
+  color: white !important;
+  white-space: nowrap;
+}
+.card {
+  width: 70%; /* Ajusta este valor según tus necesidades */
+}
+
+#carouselExampleInterval {
+  width: 100%; /* Esto hará que el carrusel ocupe el 70% del ancho de su contenedor */
+  height: auto; /* Esto permitirá que la altura del carrusel se ajuste automáticamente */
+  margin: auto; /* Esto centrará el carrusel horizontalmente */
+  border: none !important; /* Esto eliminará el borde del carrusel */
+}
+
+.carusel {
+  width: 100% !important; /* Esto hará que las imágenes ocupen todo el ancho del carrusel */
+  height: 150px !important; /* Esto hará que las imágenes ocupen toda la altura del carrusel */
+  object-fit: contain; /* Esto hará que las imágenes se ajusten dentro del carrusel */
+}

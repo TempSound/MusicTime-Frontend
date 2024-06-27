@@ -1,0 +1,34 @@
+.logo {
+    width: 15%;
+    height: 15%;
+}
+
+.navbar {
+  background-color: #002060;
+}
+.my-navbar {
+  background-color: #002060;
+}
+.custom-link {
+  color: white !important;
+}
+.logout-button {
+  background-color: #670000 !important;
+  color: white !important;
+  white-space: nowrap;
+}
+.profile-button {
+  background-color: #b57b0a !important;
+  color: white !important;
+  white-space: nowrap;
+}
+.login-button {
+  background-color: #017030 !important;
+  color: white !important;
+  white-space: nowrap;
+}
+.signup-button {
+  background-color: #088493 !important;
+  color: white !important;
+  white-space: nowrap;
+}

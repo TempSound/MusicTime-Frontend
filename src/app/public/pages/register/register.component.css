@@ -1,0 +1,15 @@
+.content-login {
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+.regi-button {
+  background-color: #002060 !important;
+  color: white !important;
+  white-space: nowrap;
+}
+
+button[disabled] {
+  background-color: grey !important;
+  color: white !important;
+}

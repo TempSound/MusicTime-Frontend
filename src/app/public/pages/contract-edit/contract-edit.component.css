@@ -1,0 +1,9 @@
+.cont-button {
+  background-color: #002060 !important;
+  color: white !important;
+  white-space: nowrap;
+}
+button[disabled] {
+  background-color: grey !important;
+  color: white !important;
+}

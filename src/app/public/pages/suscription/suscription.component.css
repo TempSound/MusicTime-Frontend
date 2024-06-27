@@ -1,0 +1,16 @@
+.Enter-button {
+  background-color: #5e0aa6 !important;
+  color: white !important;
+  white-space: nowrap;
+}
+
+.Music-button {
+  background-color: #b8bd18 !important;
+  color: white !important;
+  white-space: nowrap;
+}
+
+button[disabled] {
+  background-color: grey !important;
+  color: white !important;
+}

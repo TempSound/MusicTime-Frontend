@@ -1,0 +1,93 @@
+<div class="content">
+    <div class="filter">
+      <img ngSrc="../../../../assets/musica.gif" alt="GIF de música" class="logo-music" height="640" width="640">
+        <h3 class="fw-bold">"Unleashing the Rhythm: Discover New Bands, Live!"</h3>
+        <p>"MusicTime-TempSound"</p>
+        <div>
+        </div>
+        <mat-form-field appearance="outline" class="w-100 mt-2">
+            <mat-label>Search</mat-label>
+            <input matInput placeholder="Artist.." (keyup)="applyFilter($event)">
+            <mat-icon matSuffix>search</mat-icon>
+        </mat-form-field>
+    </div>
+    <div>
+        <h1 class="text-center mt-5" *ngIf="filter.length==0">No musicians found</h1>
+
+      <div class="card mx-auto my-3">
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="8000">
+            <img ngSrc="../../../../assets/sus3.png" class="d-block w-100 carusel" alt="..." height="10" width="10">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img ngSrc="../../../../assets/sus3.png" class="d-block w-100 carusel" alt="..." height="10" width="10">
+          </div>
+          <div class="carousel-item">
+            <img ngSrc="../../../../assets/Screenshot%202024-06-24%20115906.png" class="d-block w-100 carusel" alt="..." height="10" width="10">
+          </div>
+        </div>
+      </div>
+      </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <h1 *ngIf="!musicals" class="text-center mt-5">No hay datos</h1>
+                <div class="col-md-6 p-2 mt-3" *ngFor="let item of filter">
+                    <div class="shadow-sm p-3">
+                        <img
+                            class="img-item"
+                            [src]="item.photo ? 'data:image/jpg;base64,' + item.photo : 'https://objetivoligar.com/wp-content/uploads/2017/03/blank-profile-picture-973460_1280-768x768.jpg'"
+                            alt="music">
+                        <div>
+                            <div class="mt-1"><span class="fw-bold">Name:
+                                </span>
+                                <span>{{item.musicalName}}</span>
+                            </div>
+                            <div class="mt-1"><span class="fw-bold">Manager:
+                                </span><span>{{item.managerFirstName}}
+                                    {{item.managerLastName}}</span> </div>
+                            <div class="mt-1">
+                                <span class="fw-bold">Genre:
+                                </span><span>{{item.genre}}</span> </div>
+                            <div class="mt-1"><span class="fw-bold">Description:
+                                </span><span>{{item.description}}</span>
+                            </div>
+                            <div class="d-flex justify-content-between mt-2">
+                                <div class="d-flex align-items-center">
+                                    <span class="fw-bold">Qualification: </span>
+                                    <div>
+                                        <mat-icon>star</mat-icon>
+                                        <mat-icon>star</mat-icon>
+                                        <mat-icon>star</mat-icon>
+                                        <mat-icon>star</mat-icon>
+                                        <mat-icon>star</mat-icon>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button routerLink="/profile/{{item.id}}"
+                                        class="ms-2"
+                                        mat-raised-button>View
+                                        profile</button>
+                                    <button
+                                        routerLink="/contract-create/{{item.id}}"
+                                        class="ms-2 hire-button" mat-raised-button
+                                        color="primary">Hire</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
